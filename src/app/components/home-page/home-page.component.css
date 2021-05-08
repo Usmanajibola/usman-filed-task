@@ -1,0 +1,134 @@
+.desktop{
+    min-height: 100vh;
+    padding-top: 10vh;
+    width: 100%;
+    position: relative;
+}
+.bold-text{
+    font-weight: bolder;
+}
+
+.filed-image{
+    margin-bottom:20px ;
+}
+
+.artboard-image{
+    height: 440px;
+    width: 100%;
+    background: url('../../../assets/images/Artboard 1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat:no-repeat ;
+}
+
+.big-ellipse{
+    position: absolute;
+    top:50px;
+    left: 45%;
+    z-index: -1;
+   
+}
+
+svg{
+    position: absolute;
+}
+
+.repeat-grid-2{
+    position: absolute;
+    top: 50px;
+    left: 85%;
+    z-index: -2;
+}
+
+.subtraction{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.book{
+    font-size: 34px;
+    line-height: 45px;
+    letter-spacing: 0px;
+    font-weight: bolder;
+}
+
+.ai-text{
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.56px;
+    margin-bottom: 20px;
+}
+
+.offer{
+    height: 400px;
+    background: url('../../../assets/images/Group 388.svg');
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    position: relative;
+    width: 100%;
+}
+
+.benefits{
+    min-height: 350px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.benefits-image{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.benefits-text{
+    font-size: 34px;
+}
+
+.testimonials{
+    background:linear-gradient(to bottom right, #38CCF5, #3ECCF5, #42CCF5, #36C1EE, #119FD6, #2A97BF, #108ABF);
+    min-height: 300px;
+    z-index: -1;
+    padding: 80px 0 !important;
+}
+
+.testimonial-title{
+    width: 200px;
+}
+
+.profile-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background:url('../../../assets/images/usman_pic.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.no-gutter.row,
+.no-gutter.container,
+.no-gutter.container-fluid{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-gutter>[class^="col-"]{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .offer{
+        background-size: contain;
+    }
+}
+
+

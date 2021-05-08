@@ -1,0 +1,15 @@
+<div class="form-div">
+    <div class="form-input-div ">
+        <h2 class="font-weight-bold">We'll be in touch to get your trial setup.</h2>
+        <p>Fill out form.</p>
+        <form [formGroup]="paymentForm">
+            <input type="text" formControlName="firstName" placeholder="First Name*" class="name-input" />
+            <input type="text" formControlName="lastName" placeholder="Last Name*" class="name-input" />
+            <input type="text" formControlName="email" placeholder="Work Email*" class="input" />
+            <input type="text" formControlName="monthlyAdvertisingBudget" placeholder="Monthly Advertising Budget*" class="input" />
+            <input type="text" formControlName="phoneNumber" placeholder="Romania(Roman)     +40" class="input" />
+            <button (click)="makePayment()" class="btn text-white button" style="background-color:#FF6E4E">GET FREE TRIAL</button>
+        </form>
+    </div>
+</div>
+
