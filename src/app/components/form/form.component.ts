@@ -4,6 +4,8 @@ import { PaymentService } from '../../services/payment.service';
 import { User } from '../../classes/user';
 import { Store } from '@ngrx/store'
 import { take, tap } from 'rxjs/operators';
+import { UserState } from 'src/app/states/user-state/user.state';
+import { userAdd } from 'src/app/states/user-state/user.actions';
 
 @Component({
   selector: 'app-form',
@@ -42,7 +44,8 @@ export class FormComponent implements OnInit {
   })
 
   constructor(
-    private paymentService: PaymentService
+    private paymentService: PaymentService,
+    private store: Store<UserState>
   ) { }
 
   ngOnInit(): void {
@@ -56,6 +59,7 @@ export class FormComponent implements OnInit {
     ).subscribe(
       data => {
         this.paymentSuccess.emit()
+        this.store.dispatch(userAdd({newUser:newUser}))
       },
       error => {
         this.paymentError.emit()

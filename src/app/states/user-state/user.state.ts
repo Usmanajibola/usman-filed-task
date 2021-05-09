@@ -8,9 +8,9 @@ export interface UserState {
 
 
 export const initialState:UserState = {
-    firstName:'',
-    lastName:'',
-    email:'',
+    firstName:'Usman',
+    lastName:'Abass',
+    email:'usmanajibolaabass@gmail.com',
     monthlyAdvertisingBudget:null,
     phoneNumber:null,
 
